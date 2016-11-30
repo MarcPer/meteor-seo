@@ -185,7 +185,7 @@ run = (defaults = {}) ->
     meta = _.extend({}, defaults.meta, seo.meta)
 
     inheritFromParent twitter, ['image', 'description']
-    inheritFromParent og, ['image', 'description']
+    inheritFromParent og, ['image', 'image:secure_url', 'image:width', 'image:height', 'description']
     inheritFromParent meta, 'description'
 
     # For each property, use it's formatter.
